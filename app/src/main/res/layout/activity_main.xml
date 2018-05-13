@@ -4,21 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
 
-        <TextView android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question One:"
             android:textAllCaps="true" />
 
-        <TextView android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="How many licks does it take to get to the center of a tooties pop"
-            />
+            android:text="How many licks does it take to get to the center of a tooties pop" />
 
         <CheckBox
             android:id="@+id/whippedCream"
@@ -45,31 +47,55 @@
             android:text="Radio Question One"
             android:textAllCaps="true" />
 
+        <TextView
+            android:id="@+id/answer_check_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <RadioButton android:id="@+id/radio_one"
+
+            <RadioButton
+                android:id="@+id/radio_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="one"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/radio_two"
+                android:onClick="onRadioButtonClicked"
+                android:text="one" />
+
+            <RadioButton
+                android:id="@+id/radio_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="two"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/radio_three"
+                android:onClick="onRadioButtonClicked"
+                android:text="two" />
+
+            <RadioButton
+                android:id="@+id/radio_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="three"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/radio_four"
+                android:onClick="onRadioButtonClicked"
+                android:text="three" />
+
+            <RadioButton
+                android:id="@+id/radio_four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="four"
-                android:onClick="onRadioButtonClicked"/>
+                android:onClick="onRadioButtonClicked"
+                android:text="four" />
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_radio_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
 
         <TextView
@@ -85,27 +111,43 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <RadioButton android:id="@+id/radio2_one"
+
+            <RadioButton
+                android:id="@+id/radio2_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="One"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/radio2_two"
+                android:onClick="onRadioButtonClicked"
+                android:text="One" />
+
+            <RadioButton
+                android:id="@+id/radio2_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="two"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/radio2_three"
+                android:onClick="onRadioButtonClicked"
+                android:text="two" />
+
+            <RadioButton
+                android:id="@+id/radio2_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="three"
-                android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/radio3_four"
+                android:onClick="onRadioButtonClicked"
+                android:text="three" />
+
+            <RadioButton
+                android:id="@+id/radio2_four"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="four"
-                android:onClick="onRadioButtonClicked"/>
+                android:onClick="onRadioButtonClicked"
+                android:text="four" />
         </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/answer_radio_question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -113,11 +155,6 @@
             android:text="Question"
             android:textColor="#000000"
             android:textSize="16sp" />
-
-
-
-
-
 
         <Button
             android:id="@+id/button_id"
