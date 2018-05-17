@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     int question1 = 0;
     int question2 = 0;
+    int question3 = 0;
     int score = 0;
 
     @Override
@@ -41,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
         boolean hasOneLolliPop = oneLolliPop.isChecked();
         boolean hasTwoLolliPop = twoLolliPop.isChecked();
 
-        score = question1 + question2;
+        EditText customerNameText   = (EditText)findViewById(R.id.name);
+        String customerName = customerNameText.getText().toString();
+
+        score = question1 + question2 + question3;
         if (hasOneLolliPop && hasTwoLolliPop) {
             score++;
         }
@@ -49,11 +53,14 @@ public class MainActivity extends AppCompatActivity {
         String message = createOrderSummary(hasOneLolliPop, hasTwoLolliPop, score);
         TextView questionOneTextView = (TextView) findViewById(R.id.answer_radio_question_1);
         TextView questionTwoTextView = (TextView) findViewById(R.id.answer_radio_question_2);
+        TextView questionThreeTextView = (TextView) findViewById(R.id.answer_radio_question_3);
         TextView questionOneCheckTextView = (TextView) findViewById(R.id.answer_check_question_1);
 
         displayMessageCheckBox(hasOneLolliPop, hasTwoLolliPop, questionOneCheckTextView);
         displayMessageRadioQuestion2(question1, questionOneTextView);
         displayMessageRadioQuestion2(question2, questionTwoTextView);
+        displayMessageRadioQuestion2(question3, questionThreeTextView);
+
         displayMessage(message);
     }
 
@@ -102,6 +109,27 @@ public class MainActivity extends AppCompatActivity {
             case R.id.radio2_four:
                 if (checked)
                     question2 = 0;// Ninjas rule
+            {
+                break;
+            }
+        }
+
+        switch (view.getId()) {
+            case R.id.radio3_one:
+                if (checked)
+                    question3 = 0;// Pirates are the best
+                break;
+            case R.id.radio3_two:
+                if (checked)
+                    question3 = 0;// Ninjas rule
+                break;
+            case R.id.radio3_three:
+                if (checked)
+                    question3 = 1;// Pirates are the best
+                break;
+            case R.id.radio3_four:
+                if (checked)
+                    question3 = 0;// Ninjas rule
             {
                 break;
             }

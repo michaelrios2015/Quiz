@@ -13,14 +13,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Question One:"
+            android:text="Check Box Question One:"
             android:textAllCaps="true" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="How many licks does it take to get to the center of a tooties pop" />
+            android:text="Instert question one" />
 
         <CheckBox
             android:id="@+id/whippedCream"
@@ -38,6 +38,53 @@
             android:text="the world may never know"
             android:textSize="16sp" />
 
+        <CheckBox
+            android:id="@+id/check_1_question_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="three"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_1_question_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="four"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/answer_check_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill in Question One:"
+            android:textAllCaps="true" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/answer_fill_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,13 +94,6 @@
             android:text="Radio Question One"
             android:textAllCaps="true" />
 
-        <TextView
-            android:id="@+id/answer_check_question_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#000000"
-            android:textSize="16sp" />
 
         <RadioGroup
             android:layout_width="fill_parent"
@@ -136,6 +176,7 @@
             <RadioButton
                 android:id="@+id/radio2_four"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
                 android:text="four" />
         </RadioGroup>
@@ -152,7 +193,49 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Question"
+            android:text="Radio Question Three"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio3_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="One" />
+
+            <RadioButton
+                android:id="@+id/radio3_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="two" />
+
+            <RadioButton
+                android:id="@+id/radio3_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="three" />
+
+            <RadioButton
+                android:id="@+id/radio3_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="four" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer_radio_question_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -162,7 +245,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:onClick="submitOrder"
-            android:text="string/order" />
+            android:text="Submit" />
 
         <TextView
             android:id="@+id/answer_text_view"
