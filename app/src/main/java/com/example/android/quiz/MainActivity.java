@@ -45,23 +45,39 @@ public class MainActivity extends AppCompatActivity {
         EditText customerNameText   = (EditText)findViewById(R.id.name);
         String customerName = customerNameText.getText().toString();
 
+        customerName = customerName.toUpperCase();
+
         score = question1 + question2 + question3;
         if (hasOneLolliPop && hasTwoLolliPop) {
             score++;
         }
 
-        String message = createOrderSummary(hasOneLolliPop, hasTwoLolliPop, score);
+
+        // Set textview
         TextView questionOneTextView = (TextView) findViewById(R.id.answer_radio_question_1);
         TextView questionTwoTextView = (TextView) findViewById(R.id.answer_radio_question_2);
         TextView questionThreeTextView = (TextView) findViewById(R.id.answer_radio_question_3);
         TextView questionOneCheckTextView = (TextView) findViewById(R.id.answer_check_question_1);
+        TextView questionOneFillTextView = (TextView) findViewById(R.id.answer_fill_question_1);
+
+
+        if (customerName.equals("CAT")) {
+            questionOneFillTextView.setText("correct");
+            score++;
+        }
+        else {
+            questionOneFillTextView.setText("wrong");
+        }
+
 
         displayMessageCheckBox(hasOneLolliPop, hasTwoLolliPop, questionOneCheckTextView);
         displayMessageRadioQuestion2(question1, questionOneTextView);
         displayMessageRadioQuestion2(question2, questionTwoTextView);
         displayMessageRadioQuestion2(question3, questionThreeTextView);
 
+        String message = createOrderSummary(hasOneLolliPop, hasTwoLolliPop, score);
         displayMessage(message);
+
     }
 
 
