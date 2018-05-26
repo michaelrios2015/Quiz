@@ -75,14 +75,9 @@ public class MainActivity extends AppCompatActivity {
         displayMessageRadioQuestion(question1, questionOneTextView, wrongQuestionOne);
         displayMessageRadioQuestion(question2, questionTwoTextView, wrongQuestionTwo);
         displayMessageRadioQuestion(question3, questionThreeTextView, wrongQuestionThree);
+        displayMessageFillQuestion(questionOneFillTextView, fillQuestionOne);
 
-        //checking to see if fill question one is correct should probably be moved to it's own function
-        if (fillQuestionOne.equals("CAT")) {
-            questionOneFillTextView.setText("Correct");
-            score++;
-        } else {
-            questionOneFillTextView.setText("Wrong, it's spelled splat");
-        }
+
 
 
         String message = finalScoreSummary(score);
@@ -110,6 +105,17 @@ public class MainActivity extends AppCompatActivity {
             answer.setText("Correct");
         } else {
             answer.setText(wrongAnswer);
+        }
+    }
+
+    private void displayMessageFillQuestion(TextView answer, String fillIN) {
+
+        //checking to see if fill question one is correct should probably be moved to it's own function
+        if (fillIN.equals("CAT")) {
+            answer.setText("Correct");
+            score++;
+        } else {
+            answer.setText("Wrong, it's spelled splat");
         }
     }
 
