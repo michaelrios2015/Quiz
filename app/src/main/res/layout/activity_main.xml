@@ -13,29 +13,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Check Box Question One:"
+            android:text="Question One: do you like apples??"
             android:textAllCaps="true" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Instert question one" />
 
         <CheckBox
-            android:id="@+id/whippedCream"
+            android:id="@+id/check_1_question_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="1"
+            android:paddingStart="24dp"
+            android:text="Yes"
             android:textSize="16sp" />
 
         <CheckBox
-            android:id="@+id/chocolate"
+            android:id="@+id/check_1_question_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="the world may never know"
+            android:paddingStart="24dp"
+            android:text="No"
             android:textSize="16sp" />
 
         <CheckBox
@@ -43,15 +40,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
-            android:text="three"
+            android:paddingStart="24dp"
+            android:text="Maybe"
             android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/check_1_question_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="24dp"
             android:paddingLeft="24dp"
-            android:text="four"
+            android:text="36"
             android:textSize="16sp" />
 
         <TextView
@@ -65,7 +64,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fill in Question One:"
+            android:text="Question Two: Spell Cat"
             android:textAllCaps="true" />
 
 
@@ -73,17 +72,9 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="Krazy Kat"
             android:inputType="textMultiLine" />
 
-        <TextView
-            android:id="@+id/answer_fill_question_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#000000"
-            android:textSize="16sp" />
-
 
         <TextView
             android:id="@+id/answer_fill_question_1"
@@ -92,7 +83,6 @@
             android:text=""
             android:textColor="#000000"
             android:textSize="16sp" />
-
 
 
         <TextView
@@ -100,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="Radio Question One"
+            android:text="Question Three: How many licks to the center of a tootsie roll"
             android:textAllCaps="true" />
 
 
@@ -135,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="four" />
+                android:text="The world may never know" />
         </RadioGroup>
 
         <TextView
@@ -152,7 +142,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="Radio Question Two"
+            android:text="Question Four: What is the meaning of life"
             android:textAllCaps="true" />
 
 
@@ -166,28 +156,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="One" />
+                android:text="Pie" />
 
             <RadioButton
                 android:id="@+id/radio2_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="two" />
+                android:text="Pi" />
 
             <RadioButton
                 android:id="@+id/radio2_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="three" />
+                android:text="3.5" />
 
             <RadioButton
                 android:id="@+id/radio2_four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="four" />
+                android:text="37" />
         </RadioGroup>
 
 
@@ -202,7 +192,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Radio Question Three"
+            android:text="Question Five: Who's God??"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -216,28 +206,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="One" />
+                android:text="Batman" />
 
             <RadioButton
                 android:id="@+id/radio3_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="two" />
+                android:text="Manbat" />
 
             <RadioButton
                 android:id="@+id/radio3_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="three" />
+                android:text="Super Man" />
 
             <RadioButton
                 android:id="@+id/radio3_four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="four" />
+                android:text="Supper Man" />
         </RadioGroup>
 
         <TextView
@@ -253,11 +243,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:onClick="submitOrder"
+            android:onClick="submitScore"
             android:text="Submit" />
 
         <TextView
-            android:id="@+id/answer_text_view"
+            android:id="@+id/final_score_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Answer"
