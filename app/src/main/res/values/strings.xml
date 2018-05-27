@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Quiz</string>
+    <string name="question_one_do_you_like_apples">Question One: do you like apples??</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

@@ -14,9 +14,7 @@ import android.widget.Toast;
 
 import java.text.NumberFormat;
 
-/**
- * This app displays an order form to order coffee.
- */
+//it's a quiz
 public class MainActivity extends AppCompatActivity {
 
     //initializing question values for radio questions, default is false
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         //Calculating radio questions portion of score
         score = question1 + question2 + question3;
 
-
         // used so we can add the answer to html could these be in there own function??
         TextView questionOneTextView = (TextView) findViewById(R.id.answer_radio_question_1);
         TextView questionTwoTextView = (TextView) findViewById(R.id.answer_radio_question_2);
@@ -77,25 +74,12 @@ public class MainActivity extends AppCompatActivity {
         displayMessageRadioQuestion(question3, questionThreeTextView, wrongQuestionThree);
         displayMessageFillQuestion(questionOneFillTextView, fillQuestionOne);
 
+        Context context = getApplicationContext();
+        CharSequence text = "Your final score is: " + score;
+        int duration = Toast.LENGTH_SHORT;
 
-
-
-        String message = finalScoreSummary(score);
-        displayMessage(message);
-
-    }
-
-    //creates meessage for final score
-    private String finalScoreSummary(int score) {
-        String priceMessage = "Your final score is: " + score;
-
-        return priceMessage;
-    }
-
-    // displays final score message
-    private void displayMessage(String message) {
-        TextView finalScoreTextView = (TextView) findViewById(R.id.final_score_text_view);
-        finalScoreTextView.setText(message);
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
     //used for radio questions need to add a string message showing right answer

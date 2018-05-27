@@ -9,49 +9,31 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Question One: do you like apples??"
+            android:text="@string/question_one_do_you_like_apples"
             android:textAllCaps="true" />
-
 
         <CheckBox
             android:id="@+id/check_1_question_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingStart="24dp"
-            android:text="Yes"
-            android:textSize="16sp" />
+            style="@style/CheckBoxText"
+            android:text="@string/yes" />
 
         <CheckBox
             android:id="@+id/check_1_question_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingStart="24dp"
-            android:text="No"
-            android:textSize="16sp" />
+            style="@style/CheckBoxText"
+            android:text="@string/no"/>
 
         <CheckBox
             android:id="@+id/check_1_question_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:paddingStart="24dp"
-            android:text="Maybe"
-            android:textSize="16sp" />
+            style="@style/CheckBoxText"
+            android:text="Maybe"/>
 
         <CheckBox
             android:id="@+id/check_1_question_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="24dp"
-            android:paddingLeft="24dp"
-            android:text="36"
-            android:textSize="16sp" />
+            style="@style/CheckBoxText"
+            android:text="36"/>
 
         <TextView
             android:id="@+id/answer_check_question_1"
@@ -67,14 +49,12 @@
             android:text="Question Two: Spell Cat"
             android:textAllCaps="true" />
 
-
         <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Krazy Kat"
             android:inputType="textMultiLine" />
-
 
         <TextView
             android:id="@+id/answer_fill_question_1"
@@ -84,7 +64,6 @@
             android:textColor="#000000"
             android:textSize="16sp" />
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,7 +71,6 @@
             android:layout_marginTop="16dp"
             android:text="Question Three: How many licks to the center of a tootsie roll"
             android:textAllCaps="true" />
-
 
         <RadioGroup
             android:layout_width="fill_parent"
@@ -136,7 +114,6 @@
             android:textColor="#000000"
             android:textSize="16sp" />
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -144,7 +121,6 @@
             android:layout_marginTop="16dp"
             android:text="Question Four: What is the meaning of life"
             android:textAllCaps="true" />
-
 
         <RadioGroup
             android:layout_width="fill_parent"
@@ -179,7 +155,6 @@
                 android:onClick="onRadioButtonClicked"
                 android:text="37" />
         </RadioGroup>
-
 
         <TextView
             android:id="@+id/answer_radio_question_2"
@@ -246,16 +221,6 @@
             android:onClick="submitScore"
             android:text="Submit" />
 
-        <TextView
-            android:id="@+id/final_score_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Answer"
-            android:textColor="#000000"
-            android:textSize="16sp" />
-
-
     </LinearLayout>
-
 
 </ScrollView>
